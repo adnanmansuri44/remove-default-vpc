@@ -48,7 +48,7 @@ for region in $(aws ec2 describe-regions --region eu-west-1 | jq -r .Regions[].R
   # https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-vpc.html
   # - You can't delete the main route table
   # - You can't delete the default network acl
-  # - You can't delete the default security group
+  # - You can't delete the default security group 
 
   # delete default vpc
   echo "Deleting vpc ${vpc}"
